@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Jyx5ezTQjw40sBdKPJlDPkxYptUprO3Q7QNChuqSjFc" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Just first testing entry on my blog</title>
     <meta name="description" content="Short summary of blogpost, this should be one or two sentences.
@@ -39,6 +40,7 @@
 <meta property="og:title" content="CKP1701 ~ Just first testing entry on my blog" />
 <meta property="og:description" content="Short summary of blogpost, this should be one or two sentences." />
 <meta property="og:image" content="" />
+
 </head>
 
 <body>
@@ -99,7 +101,7 @@
 
             </div>
             <div class="content">
-            <h1>Welcome to MarkdownPad 2</h1>
+            <h2>Welcome to MarkdownPad 2</h2>
 <p><strong>MarkdownPad</strong> is a full-featured Markdown editor for Windows.</p>
 <h3>Built exclusively for Markdown</h3>
 <p>Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.</p>
@@ -119,39 +121,27 @@
 <p>MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.</p>
 <p>With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.</p>
 <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">feederek</span><span class="p">():</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">feed_list</span><span class="p">:</span>
-    <span class="n">fee</span> <span class="o">=</span> <span class="n">feedparser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-    <span class="n">fee_title</span> <span class="o">=</span> <span class="n">fee</span><span class="o">.</span><span class="n">feed</span><span class="o">.</span><span class="n">title</span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="n">fee_links</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
-        <span class="k">if</span> <span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">last_feeds</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nothing new - &quot;</span> <span class="o">+</span> <span class="n">fee_title</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># for server flood detection</span>
-            <span class="n">entry_title</span> <span class="o">=</span> <span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
-            <span class="n">entry_id</span> <span class="o">=</span> <span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Updated - &quot;</span> <span class="o">+</span> <span class="n">fee_title</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">feed_list</span><span class="p">:</span>
+        <span class="n">fee</span> <span class="o">=</span> <span class="n">feedparser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+        <span class="n">fee_title</span> <span class="o">=</span> <span class="n">fee</span><span class="o">.</span><span class="n">feed</span><span class="o">.</span><span class="n">title</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+            <span class="n">fee_links</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
+            <span class="k">if</span> <span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">last_feeds</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nothing new - &quot;</span> <span class="o">+</span> <span class="n">fee_title</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># for server flood detection</span>
+                <span class="n">entry_title</span> <span class="o">=</span> <span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+                <span class="n">entry_id</span> <span class="o">=</span> <span class="n">fee</span><span class="p">[</span><span class="s1">&#39;entries&#39;</span><span class="p">][</span><span class="n">x</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Updated - &quot;</span> <span class="o">+</span> <span class="n">fee_title</span><span class="p">)</span>
 
 
-            <span class="n">message</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">fee_title</span> <span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">entry_title</span> <span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">entry_id</span><span class="p">)</span>
-            <span class="n">bot</span><span class="o">.</span><span class="n">sendMessage</span><span class="p">(</span><span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;@CHANNEL_NAME&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">message</span><span class="p">)</span>
+                <span class="n">message</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">fee_title</span> <span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">entry_title</span> <span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">entry_id</span><span class="p">)</span>
+                <span class="n">bot</span><span class="o">.</span><span class="n">sendMessage</span><span class="p">(</span><span class="n">chat_id</span><span class="o">=</span><span class="s2">&quot;@CHANNEL_NAME&quot;</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">message</span><span class="p">)</span>
 
-<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">fee_links</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;db.p&quot;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">fee_links</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;db.p&quot;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">))</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">()</span>
 </pre></div>
             </div>
-
-
-            <div class="entry-social">
-                <span class="twitter"><a target="_blank" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;" title="Twitter" href="https://twitter.com/share?url=./just-first-testing-entry-on-my-blog.html&text=Just first testing entry on my blog&via="><img src="./theme/images/icons/twitter-s.png"></a></span>
-
-                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" href="https://www.facebook.com/sharer.php?u=./just-first-testing-entry-on-my-blog.html&t=Just first testing entry on my blog"><img src="./theme/images/icons/facebook-s.png"></a></span>
-
-                <a  target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=./just-first-testing-entry-on-my-blog.html&title=Just first testing entry on my blog" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="./theme/images/icons/linkedin-s.png"></a>
-
-                <span class="mail"><a href="mailto:?subject=Just first testing entry on my blog&amp;body=Viens découvrir un article à propos de [Just first testing entry on my blog] sur le site de ckp. ./just-first-testing-entry-on-my-blog.html" title="Share by Email" target="_blank"><img src="./theme/images/icons/mail-s.png"></a></span>
-            </div>
-            <br>
 
 
         <br>
@@ -164,7 +154,7 @@
             (function() {
                 var dsq = document.createElement('script');
                 dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'https://CKP1701.disqus.com/embed.js';
+                dsq.src = 'https://ckpdev.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] ||
                  document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
@@ -243,5 +233,16 @@
 
 
 <div class='downline'></div>
+  <!-- Analytics -->
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91848473-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
 </body>
 </html>
